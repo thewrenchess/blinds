@@ -1,0 +1,260 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.show {
+    display: none;
+}
+
+.hide {
+    display: block
+}
+
+.logo {
+    height: 100px;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.n-collapse-btn {
+    display: none;
+}
+
+.n-collapse {
+    margin-top: 45px;
+}
+
+/* Media Queries */
+
+@media(max-width: 1231px) {
+    .n-collapse-btn {
+        display: inline-block;
+        border: none;
+        background-color: #F6F6F6;
+        height: 40px;
+    }
+
+    .n-item {
+        display: none !important;
+    }
+
+    .nav-logo {
+        position: absolute;
+        top: 0; bottom:0; left: 0; right:0;
+        margin: auto;
+    }
+
+    .contact-info {
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .list-show {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .list-show li {
+        display: block;
+        margin: 0px !important;
+    }
+
+    .f-left {
+        float: none;
+    }
+
+}
+
+@media(max-width: 991px) {
+    .list-show {
+        display: block !important;
+        margin-top: 8px;
+        margin-left: -200px;
+        list-style: none;
+    }
+    .list-show li {
+        display: inline;
+        margin-left: 20px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    * {
+        text-align: center;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+    .logo {
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+    .logo_text {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    #installation .text_container{
+        width: 80%;
+        margin: 0px;
+    }
+
+    .installation-img {
+        width: 80% !important;
+    }
+
+    .coupon-img {
+        margin: 10px 0px !important;
+        width: 100%;
+    }
+
+    .card {
+        margin: auto !important;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        display: block !important;
+        width: 80% !important;
+    }
+
+    .example-sidenav-content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .example-sidenav {
+      margin-top: 65px;
+      padding: 25px;
+      background-color: #48A49D;
+      width: 50% !important;
+      border-right: 2px solid rgb(0, 110, 113);
+    }
+
+    /*.nav-logo {
+        display: block !important;
+        margin: 0;
+    }*/
+    .n-collapse-btn {
+        float: left;
+    }
+
+    .list-show {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .list-show li {
+        display: block;
+        margin: 0px !important;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .contact-text {
+        padding: 0px 20px !important;
+    }
+
+    .f-left {
+        float: left;
+    }
+}
+
+
+@media(max-width: 480px) {
+
+
+
+    #installation .text_container{
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .installation-img {
+        width: 100% !important;
+    }
+
+    .coupon-img {
+        margin: 10px 0px !important;
+        width: 100%;
+    }
+
+    .card {
+        display: block;
+        margin: auto !important;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+
+    .example-sidenav-content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .example-sidenav {
+      margin-top: 65px;
+      padding: 25px;
+      background-color: #48A49D;
+      width: 100% !important;
+      border-right: 2px solid rgb(0, 110, 113);
+    }
+
+    .nav-logo {
+        margin-left: 50px;
+    }
+
+    .list-show {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .list-show li {
+        display: block;
+        margin: 0px !important;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .f-left {
+        float:none;
+        padding-left: 55px !important;
+    }
+
+    .contact-info {
+        display: inline-block !important;
+        text-align: center;
+    }
+
+    .n-collapse {
+        margin-top: 65px !important;
+    }
+}

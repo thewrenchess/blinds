@@ -1,0 +1,78 @@
+
+
+<nav>
+    <mat-menu class="n-collapse" #appMenu="matMenu">
+        <div class="m-container">
+            <button class="m-btn" mat-menu-item [routerLink]="['home']"> Home </button>
+            <button class="m-btn" mat-menu-item [routerLink]="['products']"> Products </button>
+            <button class="m-btn" mat-menu-item [routerLink]="['motorization']"> Motorization </button>
+            <button class="m-btn" mat-menu-item [routerLink]="['appointment']"> Appointments </button>
+            <button class="m-btn" mat-menu-item [routerLink]="['about']"> About Us </button>
+        </div>
+
+    </mat-menu>
+
+    <button class="n-collapse-btn" mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon><i class="fa fa-bars"></i></mat-icon>
+    </button>
+
+    <img class="hide-on-mobile nav-logo" src="/assets/img/la-logo-1.png" alt="LA Custom Blinds Logo" style="height: 50px">
+    <img class="show-on-mobile nav-logo" src="/assets/img/la-logo-mobile.png" alt="LA Custom Blinds Logo" style="height: 50px">
+    <ul class="n-list">
+        <li class="n-item" [routerLink]="['home']">Home</li>
+        <li class="n-item" [routerLink]="['products']">Products</li>
+        <li class="n-item" [routerLink]="['motorization']">Motorization</li>
+        <li class="n-item" [routerLink]="['appointment']">Appointments</li>
+        <li class="n-item" [routerLink]="['about']">About</li>
+
+    </ul>
+    <a class="contact-info f-left"><span class="green"><i class="fa fa-phone"></i></span>  800-254-6371</a>
+    <a class="contact-info"><span class="green"><i class="fa fa-envelope"></i></span>  help@lacustomblinds.com</a>
+</nav>
+
+
+<div class="example-sidenav-content">
+    <button class="sidenav-btn btn btn-lg btn-default button-glow" type="button" mat-button (click)="sidenav.open()">
+        Free
+    </button>
+</div>
+
+<mat-sidenav-container class="test example-container">
+    <mat-sidenav #sidenav class="example-sidenav">
+
+        <h3 class="modal-text">Schedule your <span class="white">FREE</span> shop at home appointment & get <span class="white">FREE</span> installation</h3>
+        <div class="modal-container">
+            <table>
+                <form class="modal-form" action="" method="post">
+                    <tr>
+                        <td><input type="text" name="name" placeholder="Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="number" placeholder="Phone Number"></td>
+                    </tr>
+                    <tr>
+                        <td><textarea type="text" name="name" placeholder="Enter a message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </form>
+            </table>
+
+                <ul class="modal-contact-info">
+                    <li><i class="fa fa-phone"></i>  800-254-6371</li>
+                    <li><i class="fa fa-envelope"></i>  help@lacustomblinds.com</li>
+                </ul>
+
+            </div>
+    </mat-sidenav>
+
+
+    <router-outlet></router-outlet>
+
+
+
+</mat-sidenav-container>
